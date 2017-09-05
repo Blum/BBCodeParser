@@ -65,6 +65,17 @@ If you would like to completely remove all BBCode it's just one function call aw
          // Bold Italic!
 ```
 
+You can set a set of attributes string to each tag, defined in the config (for Laravel integration only):
+``` php
+return [
+    'attributes' => [
+        'link' => ' style="color: black;" target="_blank" ',
+        'namedlink' => ' style="color: red;" target="_blank" ',
+    ],
+
+];
+```
+
 ## Laravel integration
 The integration into Laravel is really easy, and the method is the same for both Laravel 4 and Laravel 5.
 Just open your ``app.php`` config file.

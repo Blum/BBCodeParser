@@ -1,5 +1,5 @@
 {
-    "name": "golonka/bbcodeparser",
+    "name": "i-creativ/bbcodeparser",
     "description": "Parse your BBCode easy with this library.",
     "keywords": ["bbcode", "parser", "laravel", "psr-1", "psr-2", "psr-4"],
     "homepage": "http://github.com/golonka/bbcodeparser",

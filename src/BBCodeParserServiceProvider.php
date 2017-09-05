@@ -12,6 +12,13 @@ class BBCodeParserServiceProvider extends ServiceProvider
      */
     protected $defer = true;
 
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__ . '/config/bbcodeparser.php' => config_path('bbcodeparser.php'),
+        ]);
+    }
+
     /**
      * Register the service provider.
      *
@@ -19,6 +26,11 @@ class BBCodeParserServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
+        $this->mergeConfigFrom(
+            __DIR__ . '/config/bbcodeparser.php', 'bbcodeparser'
+        );
+
         $this->app->bind('bbcode', function () {
             return new BBCodeParser;
         });
