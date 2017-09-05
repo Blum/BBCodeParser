@@ -7,7 +7,7 @@ return [
         // 'tag' => 'Attribute string',
         // Like:
 
-        //     'a' => ' style="color: black;" ',
+        'link' => ' style="color: black;" ',
 
     ],
 
