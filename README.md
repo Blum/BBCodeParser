@@ -6,6 +6,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/golonka/bbcodeparser.svg?style=flat-square)](https://packagist.org/packages/golonka/bbcodeparser)
 
 The ``Golonka\BBCodeParser`` package will help you with parsing BBCode.
+Custom attributes on each tag parsed, provided by config file (for Laravel integration only).
 
 ## Install
 
@@ -65,7 +66,7 @@ If you would like to completely remove all BBCode it's just one function call aw
          // Bold Italic!
 ```
 
-You can set a set of attributes string to each tag, defined in the config:
+You can set a set of attributes string to each tag, defined in the config (for Laravel integration only):
 ``` php
 return [
     'attributes' => [
