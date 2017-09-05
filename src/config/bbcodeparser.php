@@ -7,7 +7,7 @@ return [
         // 'tag' => 'Attribute string',
         // Like:
 
-        'link' => ' style="color: black;" ',
+        'namedlink' => ' style="color: black;" ',
 
     ],
 
